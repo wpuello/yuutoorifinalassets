@@ -7,7 +7,7 @@ ejecutar pruebas generales de un controller a una funcion especifica
 mvn -Dtest=AuthControllerTest#testLoginSuccess test
 
 #Acceso a Swagger
-http://localhost:8080/swagger-ui/index.html#/
+http://localhost:8085/swagger-ui/index.html#/
 User:wpuello
 Pass:Elles2012
 
