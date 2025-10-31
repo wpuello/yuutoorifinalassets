@@ -1,0 +1,17 @@
+
+#pruebas con JUNIT
+ejecutar pruebas generales de un controller
+mvn -Dtest=AuthControllerTest test
+
+ejecutar pruebas generales de un controller a una funcion especifica
+mvn -Dtest=AuthControllerTest#testLoginSuccess test
+
+#Acceso a Swagger
+http://localhost:8080/swagger-ui/index.html#/
+User:wpuello
+Pass:Elles2012
+
+#ACceso a Jenkis
+http://localhost:8080/
+user:wpuello
+pass:Elles2012
