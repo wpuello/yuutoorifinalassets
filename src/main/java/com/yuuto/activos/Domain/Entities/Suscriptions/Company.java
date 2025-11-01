@@ -1,8 +1,11 @@
 package com.yuuto.activos.Domain.Entities.Suscriptions;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -36,5 +39,13 @@ public class Company {
 
     @Column(name = "companycontactPhone", length = 255, nullable = true)
     private String companycontactPhone;
-    
+
+   @Column(name = "created_at", updatable = false)
+    private LocalDateTime createdAt = LocalDateTime.now();
+
+    @PrePersist
+    public void onCreate() {
+    this.createdAt = LocalDateTime.now();
+
+    }
 }

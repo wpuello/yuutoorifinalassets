@@ -18,6 +18,7 @@ pipeline {
             steps {
                 echo 'Clonando repositorio...'
                 git branch: 'main', url: 'https://github.com/wpuello/yuutoorifinalassets.git'
+                checkout scm
             }
         }
 

@@ -37,6 +37,7 @@ public class AuthControllerTest {
     @Autowired
     private ObjectMapper objectMapper;
 
+    
     @Test
     void testLoginSuccess() throws Exception {
         UserLoginRequestDTO request = new UserLoginRequestDTO();
